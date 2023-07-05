@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><img src="logo1.png" alt="Logo"><h1>Music</h1> </div>
+            <div class="search-box">
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button type ="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a class="active" href="trending.html">Trending</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header>
+    <section id="trend">
+        <div class="popular_song">
+            <h2><i class="bi bi-file-music-fill"></i></h2>
+            <h1>Trending Songs</h1>
+            <div class="pop_song">
+              <ul>
+                <li class="songTrend">
+                  <div class="img_play">
+                    <img src="img/1.jpg" alt="alan">
+                    <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                  </div>
+                  <h5>On My Way<br><span class="subtitle">Alan Walker</span></h5>
+                </li>
+                <li class="songTrend">
+                  <div class="img_play">
+                    <img src="img/1.jpg" alt="song2">
+                    <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                  </div>
+                  <h5>Song 2<br><span class="subtitle">Artist 2</span></h5>
+                </li>
+                <li class="songTrend">
+                  <div class="img_play">
+                    <img src="img/1.jpg" alt="song3">
+                    <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                  </div>
+                  <h5>Song 3<br><span class="subtitle">Artist 3</span></h5>
+                </li>
+                <li class="songTrend">
+                    <div class="img_play">
+                      <img src="img/1.jpg" alt="alan">
+                      <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                    </div>
+                    <h5>On My Way<br><span class="subtitle">Alan Walker</span></h5>
+                  </li>
+                  <li class="songTrend">
+                    <div class="img_play">
+                      <img src="img/1.jpg" alt="alan">
+                      <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                    </div>
+                    <h5>On My Way<br><span class="subtitle">Alan Walker</span></h5>
+                  </li>
+              </ul>
+            </div>
+          </div>        
+    </section>
+    <div class="master_play">
+      <div class="wave">
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+        <div class="wave1"></div>
+    </div>
+    <img src="img/1.jpg" alt="Alan" id="poster_master_play">
+    <h5 id="title">Night Changes<br>
+        <div class="subtitle">One Direction</div>
+    </h5>
+    <div class="icon">
+        <i class="bi bi-skip-start-fill" id="back"></i>
+        <i class="bi bi-play-fill" id="masterPlay"></i>
+        <i class="bi bi-skip-end-fill" id="next"></i>
+    </div>
+    <span id="currentStart">0:00</span>
+    <div class="bar">
+        <input type="range" id="seek" min="0" value="0" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+    </div>
+    <span id="currentEnd">0:00</span>
+    <div class="vol">
+        <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+        <input type="range" id="vol" min="0" value="30" max="100">
+        <div class="vol_bar"></div>
+        <div class="dot" id="vol_dot"></div>
+    </div>
+    </div> 
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+</html>
